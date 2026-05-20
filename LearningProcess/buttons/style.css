@@ -1,0 +1,90 @@
+.ButtonWrapper {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SortButton {
+  margin: 30px;
+}
+
+.Button1 {
+  padding: 7px;
+  padding-inline: 30px;
+  text-decoration: none;
+  background-color: white;
+  border: solid 1.5px black;
+  box-shadow:0 5px  0;
+  transition: 0.1s;
+  font-size: large;
+  border-radius:8px;
+  transform: translate(0,-3px);
+  cursor: pointer;
+}
+.Button1:hover{
+  background-color: wheat;
+}
+.Button1:active{
+  transform: translate(0,0);
+  box-shadow: 0 2px  0;
+}
+.Button2{
+  padding: 7px;
+  padding-inline: 30px;
+  text-decoration: none;
+  background-color: white;
+  border: solid 1.5px black;
+  box-shadow:5px 5px 0 0;
+  transition: 0.1s;
+  font-size: large;
+  border-radius:8px;
+  cursor: pointer;
+}
+.Button2:hover{
+  background-color: wheat;
+}
+.Button2:active{
+  transform: translate(2px , 4px);
+  box-shadow:2px 2px 0 0;
+}
+.Button3{
+  padding: 7px;
+  padding-inline: 30px;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  border: solid 2px black;
+  transition: 0.3s;
+  font-size: large;
+  border-radius:8px;
+  color: white;
+  font-weight:600;
+  cursor: pointer;
+}
+.Button3:hover{
+  color: black;
+  background-color: white;
+}
+.Button4{
+  padding: 7px;
+  padding-inline: 30px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  transition: 0.3s;
+  font-size: large;
+  border-radius:8px;
+  color: black;
+  font-weight:600;
+  cursor: pointer;
+}
+.Button4:hover{
+  color: white;
+  background-color: rgb(89, 136, 245);
+  box-shadow: 0 0 0px 5px #c8deff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -1,0 +1,21 @@
+.container{
+    width:max-content;
+    height:auto;
+    position: relative;
+}
+.container::before{
+    content: '';
+    height:2px;
+    width: 2px;
+    background-color: rgb(0, 89, 255);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 1s;
+    transform-origin:left ;
+}
+.container:hover::before{
+  
+    transform: scaleX(30);
+
+}

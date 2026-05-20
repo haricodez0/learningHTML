@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            height: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .TextBox{
+            margin-top:20px;
+            border: solid 1.5px rgb(65, 65, 255);
+            border-radius: 8px;
+            height:100%;
+            width:500px;
+            background-color:rgb(172, 213, 249) ;
+        }
+        .TextLabel {
+            border-radius: 50px;
+            border: solid 1.5px rgb(65, 65, 255);
+            width:450px;
+            padding:5px;
+            transition: 0.3s;
+            flex:1;
+            outline: none;
+            
+        }
+        .TextLabel:hover {
+            background-color: rgb(235, 235, 255);
+            border: solid 1.5px rgb(0, 0, 255);
+        }
+        .AddButton {
+            background-color: rgb(0, 81, 255);
+            border: solid 1.5px rgb(0, 81, 255);
+            color:white;
+            border-radius:50px;
+            padding:5px;
+            transition: 0.3s;
+            position: absolute;
+            right:0;
+        }
+        .AddButton:hover{
+            color: black;
+            background-color: white;
+            border: solid 1.5px rgb(0, 81, 255);
+            cursor: pointer;
+        }
+       .input-group{
+         display: flex;
+         border-radius: 4px;
+         width: 500px;
+         position: relative;
+        }
+        .TextBoxStyle {
+            background-color:white;
+            padding:4px;
+            border-radius: 5px;
+            position:relative;
+            display:flex;
+            align-items: center;
+            min-height:20px;
+        }
+        .list{
+            list-style: none;
+            padding: 0;
+        }
+        .list-checkbox:checked + .list-text { 
+            text-decoration: line-through;
+        }
+        .DeleteButton {
+            border-radius: 50px;
+            border:solid 1.5px rgb(248, 90, 90);
+            background-color: rgb(253, 230, 230);
+            cursor: pointer;
+            color:rgb(255, 0, 0);
+            transition: 0.3s;
+            position: absolute;
+            right:0;
+            margin-right:3px;
+        }
+        .DeleteButton:hover {
+            background-color: white;
+            color: rgb(255, 0, 0);
+        }
+        .editButton {
+            background-color: rgb(216, 228, 254);
+            border: solid 1.5px rgb(0, 81, 255);
+            color:rgb(0, 21, 255);
+            border-radius:50px;
+            cursor:pointer;
+            transition: 0.3s;
+            position:absolute;
+            right:60px;
+        }
+        .editButton:hover{
+            color: rgb(0, 21, 255);
+            background-color: white;
+            border: solid 1.5px rgb(0, 81, 255);
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="input-group">
+    <input type="text" class="TextLabel" id="TextLabel" placeholder="Type a Task">
+    <button onclick="GetText()" class="AddButton">Add</button>
+    </div>
+        
+    <div id="List" class="TextBox"></div>
+    <script src="script.js"></script>
+</body>
+</html>
